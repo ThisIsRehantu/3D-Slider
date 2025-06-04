@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #D2D2D2;
+            background-image:
+            repeating-linear-gradient(
+                to right, transparent 0 100px,
+                #25283b22 100px 101px
+            ),
+            repeating-linear-gradient(
+                to bottom, transparent 0 100px,
+                #25283b22 100px 101px
+            );
+        }
+        
+        body::before{
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-image: url(images/bg.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <div class="slider" style="--quantity: 10">
+            <div class="item" style="--position: 1"><img src="images/anime1.webp" alt=""></div>
+            <div class="item" style="--position: 2"><img src="images/anime2.webp" alt=""></div>
+            <div class="item" style="--position: 3"><img src="images/anime3.webp" alt=""></div>
+            <div class="item" style="--position: 4"><img src="images/anime4.webp" alt=""></div>
+            <div class="item" style="--position: 5"><img src="images/anime5.webp" alt=""></div>
+            <div class="item" style="--position: 6"><img src="images/anime6.webp" alt=""></div>
+            <div class="item" style="--position: 7"><img src="images/anime7.webp" alt=""></div>
+            <div class="item" style="--position: 8"><img src="images/anime8.webp" alt=""></div>
+            <div class="item" style="--position: 9"><img src="images/anime9.webp" alt=""></div>
+            <div class="item" style="--position: 10"><img src="images/anime10.webp" alt=""></div>
+        </div>
+        <div class="content">
+            <h1 data-content="CSS ONLY">
+                CSS ONLY
+            </h1>
+            <div class="author">
+                <h2>Rehantu</h2>
+                <p><b>Responsif</b></p>
+            </div>
+            <div class="model"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
